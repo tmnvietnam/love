@@ -13,6 +13,14 @@
         </ul>
       </div>
       <canvas></canvas>
-      <script src="script.js"></script>
+      <audio id="myAudio" autoplay loop style="display: none;">
+        <source src="Nothing Gonna Change My Love For You (Lyric)  -TRUE LOVE.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ audio.
+      </audio>      <script src="script.js"></script>
+      <script>
+          document.addEventListener('click', function () {
+    document.getElementById('myAudio').play();
+  }, { once: true });
+      </script>
 </body>
 </html>
