@@ -89,7 +89,7 @@ class TextSparks
         canvas.setAttribute('height', height);
 
         const font = (size) => {
-            return `bold ${size}px Arial`;
+            return `${size}px Arial`;
         };
 
         engine.fillStyle = '#000';
@@ -297,7 +297,7 @@ class TextSparks
                 const opa = Math.max(0, Math.sin(pos.o * Math.PI * 2));
                 const padding = opa * this.width / 200;
     
-                ctx.fillStyle = color(subMask.hsl, this.opa * opa * 0.2);
+                ctx.fillStyle = color(subMask.hsl, this.opa * opa * 0.7);
     
                 ctx.save();
                 ctx.translate(x, y);
